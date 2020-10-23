@@ -8,11 +8,11 @@ const drawer = document.querySelector('.drawer');
 
 drawerToggler.addEventListener('click', function (event) {
   drawer.classList.toggle('open');
-  drawerOverlay.style.display = 'block';
+  drawerOverlay.classList.toggle('open');
   event.stopPropagation();
 });
 
 drawerOverlay.addEventListener('click', function () {
   drawer.classList.remove('open');
-  this.style.display = 'none';
+  this.classList.remove('open');
 });

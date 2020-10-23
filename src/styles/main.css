@@ -80,13 +80,15 @@ html {
 }
 
 .drawer-overlay {
-  display: none;
+  display: block;
   z-index: 9;
   top: 0;
   width: 100%;
   height: 100%;
   position: fixed;
   background-color: rgba(41, 41, 43, .6);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
 }
 
 .drawer {
@@ -98,8 +100,8 @@ html {
   height: 100%;
   position: fixed;
   background-color: #0F0F10;
-  -webkit-transform: translate(-400px, 0);
-  transform: translate(-400px, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
   transition: .3s;
 }
 
