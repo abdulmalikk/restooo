@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-	<title>Restaurant Apps Starter Project</title>
+	<title>Restooo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="msapplication-TileColor" content="#ffda00">
+	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#ffda00">
-	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -25,7 +27,7 @@
 				<li class="nav-link"><a href="#">Favorite</a></li>
 				<li class="nav-link"><a href="https://github.com/abdulmalikk" target="_blank" rel="noreferrer noopener">About us</a></li>
 			</ul>
-			<a id="drawertoggler" class="drawer-toggler">☰</a>
+			<a href="#" id="drawertoggler" class="drawer-toggler">☰</a>
 		</div>
 		<!-- mobile -->
 		<div class="drawer-overlay"></div>
@@ -38,50 +40,21 @@
 	<!-- akhir nav -->
 
 	<!-- jumbotron -->
-	<div class="jumbotron">
-		<h1 class="jumbotron-title">Anda lapar?</h1>
-		<p class="jumbotron-tagline">
-			<span class="font-semibold">Restooo</span> menyediakan pilihan restoran terbaik untuk dikunjungi.<br/>
-			Saatnya hilangkan lapar anda sekarang!
-		</p>
-		<a href="#maincontent" class="btn-cta">Lihat restoran</a>
+	<div class="jumbotron" role="img" aria-label="hero image">
+		<div class="jumbotron-inner">
+			<h1 class="jumbotron-title">Anda lapar?</h1>
+			<p class="jumbotron-tagline">
+				<span class="font-semibold">Restooo</span> menyediakan pilihan restoran terbaik untuk dikunjungi.<br/>
+				Saatnya hilangkan lapar anda sekarang!
+			</p>
+			<a href="#maincontent" class="btn-cta">Lihat restoran</a>
+		</div>
 	</div>
 	<!-- akhir jumbotron -->
 
 	<main id="maincontent">
 		<h1 class="list-resto-title">Daftar Restoran</h1>
-		<section class="list-resto-items">
-			<div class="card">
-				<div class="card-rating">★ 4.8</div>
-				<img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04" alt="restoran" width="100%">
-				<div class="card-body">
-					<h1 class="card-location">Lokasi : Malang</h1>
-					<h1 class="card-title">Ampiran kota</h1>
-					<p class="card-desc">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-					<a href="#" class="btn-card-detail">Lihat detail</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-rating">★ 4.8</div>
-				<img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04" alt="restoran" width="100%">
-				<div class="card-body">
-					<h1 class="card-location">Lokasi : Malang</h1>
-					<h1 class="card-title">Ampiran kota</h1>
-					<p class="card-desc">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-					<a href="#" class="btn-card-detail">Lihat detail</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-rating">★ 4.8</div>
-				<img src="https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04" alt="restoran" width="100%">
-				<div class="card-body">
-					<h1 class="card-location">Lokasi : Malang</h1>
-					<h1 class="card-title">Ampiran kota</h1>
-					<p class="card-desc">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-					<a href="#" class="btn-card-detail">Lihat detail</a>
-				</div>
-			</div>
-		</section>
+		<section class="list-resto-items"></section>
 	</main>
 
 	<footer>

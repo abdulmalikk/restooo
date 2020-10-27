@@ -35,7 +35,7 @@ html {
 
 /* nav */
 .nav {
-  padding: 1rem 0;
+  padding: 16px 0;
   background-color: #0F0F10;
 }
 
@@ -55,6 +55,7 @@ html {
 }
 
 .nav-link a {
+  padding: 15px 5px;
   margin-left: 3rem;
   text-decoration: none;
   color: white;
@@ -63,6 +64,9 @@ html {
 
 .nav-link a:hover {
   color: #FFDA00;
+}
+.nav-link a:focus {
+  border: 1px dashed #FFDA00;
 }
 
 .nav-link.active a {
@@ -73,8 +77,10 @@ html {
 }
 
 .drawer-toggler {
+  padding: 5px;
+  text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 44px;
   cursor: pointer;
   display: block;
 }
@@ -112,14 +118,19 @@ html {
 }
 
 .drawer-link a {
+  padding: 8px;
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 32px;
   transition: .3s;
 }
 
 .drawer-link a:hover {
   color: #FFDA00;
+}
+
+.drawer-link a:focus {
+  border: 1px dashed #FFDA00;
 }
 
 .drawer-link.active a {
@@ -134,38 +145,37 @@ html {
 .jumbotron {
   width: 100%;
   height: 90vh;
+  text-align: center;
   background-image: linear-gradient(rgba(41, 41, 43, .8), rgb(41, 41, 43, .8)), url("/images/heros/hero-image_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+.jumbotron-inner {
+  margin: 0 auto;
+  padding: 24px;
+  padding-top: 150px;
+  max-width: 800px;
+}
+
 .jumbotron-title {
   font-size: 36px;
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
 }
 
 .jumbotron-tagline {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  line-height: 26px;
+  margin-top: 20px;
   color: white;
   letter-spacing: 1px;
 }
 
 .btn-cta {
+  display: inline-block;
+  margin-top: 30px;
   padding: 14px 28px;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #FFDA00;
   color: #0F0F10;
   font-size: 16px;
@@ -177,7 +187,11 @@ html {
 }
 
 .btn-cta:hover {
-  background-color: hsl(51, 100%, 40%);
+  background-color: #ccad00;
+}
+
+.btn-cta:focus {
+  border: 1px dashed #0F0F10;
 }
 /* akhir jumbotron */
 
@@ -185,8 +199,8 @@ html {
 main {
   width: 80%;
   margin: auto;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding-top: 24px;
+  padding-bottom: 16px;
 }
 
 .list-resto-title {
@@ -197,15 +211,15 @@ main {
 .list-resto-items {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  grid-gap: 1.8rem;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
 }
 
 .card {
   background-color: #0F0F10;
   color: white;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   position: relative;
 }
@@ -221,29 +235,36 @@ main {
 }
 
 .card img {
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px 8px 0 0;
 }
 
 .card .card-body {
   padding: 18px;
+  margin-bottom: 70px;
 }
 
 .card .card-body .card-location, .card .card-body .card-desc {
-  font-size: .8rem;
-  line-height: 1.5rem;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .card .card-body .card-title {
-  font-size: 1.8rem;
+  font-size: 26px;
   margin: 5px 0 15px;
 }
 
-.card .card-body .btn-card-detail {
-  width: 100%;
-  display: inline-block;
-  margin-top: 30px;
+.card .btn-card-detail {
+  width: 90%;
+  display: block;
   padding-top: 14px;
   padding-bottom: 14px;
+  bottom: 18px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
   text-align: center;
   background-color: #FFDA00;
   color: #0F0F10;
@@ -254,8 +275,12 @@ main {
   transition: .3s;
 }
 
-.card .card-body .btn-card-detail:hover {
-  background-color: hsl(51, 100%, 40%);
+.card .btn-card-detail:hover {
+  background-color: #ccad00;
+}
+
+.card .btn-card-detail:focus {
+  border: 1px dashed #0F0F10;
 }
 /* akhir card */
 
