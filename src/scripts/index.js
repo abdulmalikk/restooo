@@ -32,7 +32,7 @@ listResto.forEach((restaurant) => {
   listRestoElm.innerHTML += `
     <div class="card">
       <div class="card-rating">★ ${restaurant.rating}</div>
-      <img src="${restaurant.pictureId}" alt="${restaurant.name}" width="100%">
+      <img src="${restaurant.pictureId}" alt="${restaurant.name}">
       <div class="card-body">
         <h1 class="card-location">Lokasi : ${restaurant.city}</h1>
         <h1 class="card-title">${restaurant.name}</h1>
